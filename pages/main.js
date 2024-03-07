@@ -1659,7 +1659,7 @@ function MainPage({ metaData }) {
               </div>
             </div>
           </>
-        ) : (
+        ) : newsSectionData.length == 1 ? (
           <>
             <div className="newsSectionthreeItems">
               <div className="sliderItemNews ">
@@ -1829,7 +1829,7 @@ function MainPage({ metaData }) {
               </div>
             </div>
           </>
-        )}
+        ) : null}
 
         <section className="text-center p-5 my-5" id="signuptoday">
           <div className="inboxSection container p-3">
