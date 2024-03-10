@@ -58,5 +58,6 @@ jobs:
         with:
           app-name: 'kindnessfront'
           slot-name: 'Production'
-          package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_186A8162D7E44771917F75B24259A4A0 }}
+          package: .
+          
