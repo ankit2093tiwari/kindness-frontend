@@ -84,7 +84,7 @@ const Login = () => {
           <div id="centerForm" className="row ">
             <div className="col-lg-6 col-md-8 login-box">
               <div className="col-lg-12 login-key">
-                <Image src="../logo.webp" width={150} height={100} alt="Logo" />
+               <Image src="/logo.png" width={150} height={100} alt="Logo" />
               </div>
 
               <div className="col-lg-12 login-title">TKC ADMIN PANEL</div>
