@@ -152,7 +152,8 @@ const About = () => {
                         <ReactPlayer
                           url={
                             data2?.section_media
-                              ? process.env.SITE_URL + data2?.section_media
+                              ? process.env.NEXT_PUBLIC_SITE_URL +
+                                data2?.section_media
                               : "demo-video.mp4"
                           }
                           controls={true}
@@ -164,7 +165,8 @@ const About = () => {
                         <Image
                           src={
                             data2?.section_media
-                              ? process.env.SITE_URL + data2?.section_media
+                              ? process.env.NEXT_PUBLIC_SITE_URL +
+                                data2?.section_media
                               : "/bg-video-banner.jpg"
                           }
                           height={300}
