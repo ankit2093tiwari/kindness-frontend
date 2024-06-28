@@ -464,6 +464,7 @@ function MainPage({ metaData }) {
           {/* editing end by sudhanshu */}
 
           <div className="container">
+            <h1 style={{color:"white"}} className="mt-5 hompageHeadings">Our Mission</h1>
             <h4 className="home-main-heading-2">{MissionText}</h4>
           </div>
           <Image
@@ -481,6 +482,7 @@ function MainPage({ metaData }) {
           <div className="container aos-init aos-animate" data-aos="fade-up">
             <div className="row gy-12">
               <div className="col-lg-12">
+                <h2 style={{color:"#646F6E"}} className="mt-2 hompageHeadings ">Our Vision</h2>
                 <h4 className="home-main-heading-3">
                   {staticContent?.page_text}
                 </h4>
@@ -506,7 +508,7 @@ function MainPage({ metaData }) {
               <div className="container">
                 <h2 className="text-center">
                   {" "}
-                  <Link
+                  {/* <Link
                     target="_blank"
                     href={`${
                       staticContent?.impact_link
@@ -517,7 +519,7 @@ function MainPage({ metaData }) {
                     <u className="decriptions_wrap">
                       CLICK HERE for detail decriptions of our IMPACTS
                     </u>
-                  </Link>
+                  </Link> */}
                 </h2>
               </div>
             </div>
@@ -572,7 +574,7 @@ function MainPage({ metaData }) {
                 <p>&nbsp;</p>
                 <h2>
                   {" "}
-                  <Link href="#!" onClick={showTeamData}>
+                  <Link href="/our-team">
                     <u className="decriptions_wrap">
                       CLICK HERE to meet The Kindness Campaign TEAM!
                     </u>
