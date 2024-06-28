@@ -451,7 +451,7 @@ const ContactUs = () => {
                       </label>
                       <div className="form-outline">
                         <input
-                          type="phone"
+                          type="text"
                           className="form-control reduceFont"
                           name="phone"
                           value={phone}
