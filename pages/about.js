@@ -248,7 +248,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           heathEquityData[0]?.media
-                            ? process.env.SITE_URL + heathEquityData[0]?.media
+                            ? process.env.NEXT_PUBLIC_SITE_URL + heathEquityData[0]?.media
                             : "demo-video.mp4"
                         }
                         controls={true}
@@ -274,7 +274,7 @@ const About = () => {
                         <Image
                           src={
                             heathEquityData[0]?.media
-                              ? process.env.SITE_URL + heathEquityData[0]?.media
+                              ? process.env.NEXT_PUBLIC_SITE_URL + heathEquityData[0]?.media
                               : "/cta-bg.jpg"
                           }
                           width={0}
@@ -292,7 +292,7 @@ const About = () => {
                     <ReactPlayer
                       url={
                         heathEquityData[1]?.media
-                          ? process.env.SITE_URL + heathEquityData[1]?.media
+                          ? process.env.NEXT_PUBLIC_SITE_URL + heathEquityData[1]?.media
                           : "demo-video.mp4"
                       }
                       controls={true}
@@ -318,7 +318,7 @@ const About = () => {
                       <Image
                         src={
                           heathEquityData[1]?.media
-                            ? process.env.SITE_URL + heathEquityData[1]?.media
+                            ? process.env.NEXT_PUBLIC_SITE_URL + heathEquityData[1]?.media
                             : "/about_video_2.png"
                         }
                         width={455}
@@ -342,7 +342,7 @@ const About = () => {
                     <ReactPlayer
                       url={
                         heathEquityData[2]?.media
-                          ? process.env.SITE_URL + heathEquityData[2]?.media
+                          ? process.env.NEXT_PUBLIC_SITE_URL + heathEquityData[2]?.media
                           : "demo-video.mp4"
                       }
                       controls={true}
@@ -368,7 +368,7 @@ const About = () => {
                       <Image
                         src={
                           heathEquityData[2]?.media
-                            ? process.env.SITE_URL + heathEquityData[2]?.media
+                            ? process.env.NEXT_PUBLIC_SITE_URL + heathEquityData[2]?.media
                             : "/about_video_2.png"
                         }
                         width={455}
@@ -387,7 +387,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           heathEquityData[3]?.media
-                            ? process.env.SITE_URL + heathEquityData[3]?.media
+                            ? process.env.NEXT_PUBLIC_SITE_URL + heathEquityData[3]?.media
                             : "demo-video.mp4"
                         }
                         controls={true}
@@ -413,7 +413,7 @@ const About = () => {
                         <Image
                           src={
                             heathEquityData[3]?.media
-                              ? process.env.SITE_URL + heathEquityData[3]?.media
+                              ? process.env.NEXT_PUBLIC_SITE_URL + heathEquityData[3]?.media
                               : "/about_video_2.png"
                           }
                           width={455}
@@ -465,10 +465,10 @@ const About = () => {
                       height="auto"
                       controls="true"
                     >
-                      <source src={educationEquityData[0]?.media ? process.env.SITE_URL + educationEquityData[0]?.media : "/demo-video.mp4"} />
+                      <source src={educationEquityData[0]?.media ? process.env.NEXT_PUBLIC_SITE_URL + educationEquityData[0]?.media : "/demo-video.mp4"} />
                     </video> */}
                     {/* <ReactPlayer
-                      url={educationEquityData[0]?.media ? process.env.SITE_URL + educationEquityData[0]?.media : "/demo-video.mp4"}
+                      url={educationEquityData[0]?.media ? process.env.NEXT_PUBLIC_SITE_URL + educationEquityData[0]?.media : "/demo-video.mp4"}
                       controls
                       playing={true}
                       muted={true}
@@ -479,7 +479,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           educationEquityData[0]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               educationEquityData[0]?.media
                             : "demo-video.mp4"
                         }
@@ -506,7 +506,7 @@ const About = () => {
                         <Image
                           src={
                             educationEquityData[0]?.media
-                              ? process.env.SITE_URL +
+                              ? process.env.NEXT_PUBLIC_SITE_URL +
                                 educationEquityData[0]?.media
                               : "/cta-bg.jpg"
                           }
@@ -523,7 +523,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           educationEquityData[0]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               educationEquityData[0]?.media
                             : "demo-video.mp4"
                         }
@@ -537,7 +537,7 @@ const About = () => {
                       <Image
                         src={
                           educationEquityData[0]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               educationEquityData[0]?.media
                             : "/about_video_2.png"
                         }
@@ -554,7 +554,7 @@ const About = () => {
                     <ReactPlayer
                       url={
                         educationEquityData[1]?.media
-                          ? process.env.SITE_URL + educationEquityData[1]?.media
+                          ? process.env.NEXT_PUBLIC_SITE_URL + educationEquityData[1]?.media
                           : "demo-video.mp4"
                       }
                       controls={true}
@@ -580,7 +580,7 @@ const About = () => {
                       <Image
                         src={
                           educationEquityData[1]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               educationEquityData[1]?.media
                             : "/about_video_2.png"
                         }
@@ -604,7 +604,7 @@ const About = () => {
                     <ReactPlayer
                       url={
                         educationEquityData[2]?.media
-                          ? process.env.SITE_URL + educationEquityData[2]?.media
+                          ? process.env.NEXT_PUBLIC_SITE_URL + educationEquityData[2]?.media
                           : "demo-video.mp4"
                       }
                       controls={true}
@@ -630,7 +630,7 @@ const About = () => {
                       <Image
                         src={
                           educationEquityData[2]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               educationEquityData[2]?.media
                             : "/about_video_2.png"
                         }
@@ -649,7 +649,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           educationEquityData[3]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               educationEquityData[3]?.media
                             : "demo-video.mp4"
                         }
@@ -676,7 +676,7 @@ const About = () => {
                         <Image
                           src={
                             educationEquityData[3]?.media
-                              ? process.env.SITE_URL +
+                              ? process.env.NEXT_PUBLIC_SITE_URL +
                                 educationEquityData[3]?.media
                               : "/about_video_2.png"
                           }
@@ -724,7 +724,7 @@ const About = () => {
                 <div className="col-md-7">
                   <div className="about_video_1">
                     {/* <ReactPlayer
-                      url={workforceEquityData[0]?.media ? process.env.SITE_URL + workforceEquityData[0]?.media : "/demo-video.mp4"}
+                      url={workforceEquityData[0]?.media ? process.env.NEXT_PUBLIC_SITE_URL + workforceEquityData[0]?.media : "/demo-video.mp4"}
                       controls
                       playing={true}
                       muted={true}
@@ -735,7 +735,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           workforceEquityData[0]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               workforceEquityData[0]?.media
                             : "demo-video.mp4"
                         }
@@ -762,7 +762,7 @@ const About = () => {
                         <Image
                           src={
                             workforceEquityData[0]?.media
-                              ? process.env.SITE_URL +
+                              ? process.env.NEXT_PUBLIC_SITE_URL +
                                 workforceEquityData[0]?.media
                               : "/cta-bg.jpg"
                           }
@@ -778,7 +778,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           workforceEquityData[0]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               workforceEquityData[0]?.media
                             : "demo-video.mp4"
                         }
@@ -792,7 +792,7 @@ const About = () => {
                       <Image
                         src={
                           workforceEquityData[0]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               workforceEquityData[0]?.media
                             : "/about_video_2.png"
                         }
@@ -817,7 +817,7 @@ const About = () => {
                     <ReactPlayer
                       url={
                         workforceEquityData[2]?.media
-                          ? process.env.SITE_URL + workforceEquityData[2]?.media
+                          ? process.env.NEXT_PUBLIC_SITE_URL + workforceEquityData[2]?.media
                           : "demo-video.mp4"
                       }
                       controls={true}
@@ -843,7 +843,7 @@ const About = () => {
                       <Image
                         src={
                           workforceEquityData[2]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               workforceEquityData[2]?.media
                             : "/about_video_2.png"
                         }
@@ -862,7 +862,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           workforceEquityData[3]?.media
-                            ? process.env.SITE_URL +
+                            ? process.env.NEXT_PUBLIC_SITE_URL +
                               workforceEquityData[3]?.media
                             : "demo-video.mp4"
                         }
@@ -889,7 +889,7 @@ const About = () => {
                         <Image
                           src={
                             workforceEquityData[3]?.media
-                              ? process.env.SITE_URL +
+                              ? process.env.NEXT_PUBLIC_SITE_URL +
                                 workforceEquityData[3]?.media
                               : "/about_video_2.png"
                           }
@@ -903,7 +903,7 @@ const About = () => {
                     <Image
                       src={
                         workforceEquityData[3]?.media
-                          ? process.env.SITE_URL + workforceEquityData[3]?.media
+                          ? process.env.NEXT_PUBLIC_SITE_URL + workforceEquityData[3]?.media
                           : "/about_video_2.png"
                       }
                       width={0}
@@ -950,7 +950,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           publicEquityData[0]?.media
-                            ? process.env.SITE_URL + publicEquityData[0]?.media
+                            ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[0]?.media
                             : "demo-video.mp4"
                         }
                         controls={true}
@@ -976,7 +976,7 @@ const About = () => {
                         <Image
                           src={
                             publicEquityData[0]?.media
-                              ? process.env.SITE_URL +
+                              ? process.env.NEXT_PUBLIC_SITE_URL +
                                 publicEquityData[0]?.media
                               : "/cta-bg.jpg"
                           }
@@ -992,7 +992,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           publicEquityData[0]?.media
-                            ? process.env.SITE_URL + publicEquityData[0]?.media
+                            ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[0]?.media
                             : "demo-video.mp4"
                         }
                         controls
@@ -1005,7 +1005,7 @@ const About = () => {
                       <Image
                         src={
                           publicEquityData[0]?.media
-                            ? process.env.SITE_URL + publicEquityData[0]?.media
+                            ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[0]?.media
                             : "/about_video_2.png"
                         }
                         width={455}
@@ -1021,7 +1021,7 @@ const About = () => {
                     <ReactPlayer
                       url={
                         publicEquityData[1]?.media
-                          ? process.env.SITE_URL + publicEquityData[1]?.media
+                          ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[1]?.media
                           : "demo-video.mp4"
                       }
                       controls={true}
@@ -1047,7 +1047,7 @@ const About = () => {
                       <Image
                         src={
                           publicEquityData[1]?.media
-                            ? process.env.SITE_URL + publicEquityData[1]?.media
+                            ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[1]?.media
                             : "/about_video_2.png"
                         }
                         width={455}
@@ -1060,7 +1060,7 @@ const About = () => {
                   <Image
                     src={
                       publicEquityData[1]?.media
-                        ? process.env.SITE_URL + publicEquityData[1]?.media
+                        ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[1]?.media
                         : "/about_video_2.png"
                     }
                     width={200}
@@ -1094,7 +1094,7 @@ const About = () => {
                     <ReactPlayer
                       url={
                         publicEquityData[2]?.media
-                          ? process.env.SITE_URL + publicEquityData[2]?.media
+                          ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[2]?.media
                           : "demo-video.mp4"
                       }
                       controls={true}
@@ -1120,7 +1120,7 @@ const About = () => {
                       <Image
                         src={
                           publicEquityData[2]?.media
-                            ? process.env.SITE_URL + publicEquityData[2]?.media
+                            ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[2]?.media
                             : "/about_video_2.png"
                         }
                         width={455}
@@ -1133,7 +1133,7 @@ const About = () => {
                   <Image
                     src={
                       publicEquityData[2]?.media
-                        ? process.env.SITE_URL + publicEquityData[2]?.media
+                        ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[2]?.media
                         : "/about_video_2.png"
                     }
                     width={200}
@@ -1148,7 +1148,7 @@ const About = () => {
                       <ReactPlayer
                         url={
                           publicEquityData[3]?.media
-                            ? process.env.SITE_URL + publicEquityData[3]?.media
+                            ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[3]?.media
                             : "demo-video.mp4"
                         }
                         controls={true}
@@ -1174,7 +1174,7 @@ const About = () => {
                         <Image
                           src={
                             publicEquityData[3]?.media
-                              ? process.env.SITE_URL +
+                              ? process.env.NEXT_PUBLIC_SITE_URL +
                                 publicEquityData[3]?.media
                               : "/about_video_2.png"
                           }
@@ -1188,7 +1188,7 @@ const About = () => {
                     <Image
                       src={
                         publicEquityData[3]?.media
-                          ? process.env.SITE_URL + publicEquityData[3].media
+                          ? process.env.NEXT_PUBLIC_SITE_URL + publicEquityData[3].media
                           : "/about_video_2.png"
                       }
                       width={0}
