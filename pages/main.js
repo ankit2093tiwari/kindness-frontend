@@ -1869,7 +1869,7 @@ function MainPage({ metaData }) {
                   height={0}
                   alt="news-title-3"
                   sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
+                  style={{ width: "100%", height: "100%" }}
                 />
                 <Link href="/get-involved/#donate" target="_blank">
                   <p className="get_p">
