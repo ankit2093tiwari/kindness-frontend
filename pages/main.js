@@ -1864,7 +1864,7 @@ function MainPage({ metaData }) {
             <div className="row">
               <div className="col-lg-7 col-md-12 mb-4 align-self-centers">
                 <Image
-                  src="news-title-3.png"
+                  src="/image.jpg"
                   width={0}
                   height={0}
                   alt="news-title-3"
