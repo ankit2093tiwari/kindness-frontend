@@ -827,7 +827,7 @@ const Get_involved = () => {
                           </a>
                         </div>
                       </div>
-                    </div>*/}
+                    </div>
 
                     <div className="container" id="volunteer">
                       <div className="Event_sidebar_3">
@@ -852,12 +852,12 @@ const Get_involved = () => {
 
                       <div className="container">
                         <div className="row">
-                          <p className="fst_event_involved_sidebar">
-                            {data3?.page_text}
-                          </p>
+                          <p className="fst_event_involved_sidebar"> {data3?.page_text}  </p>
                         </div>
                       </div>
-                    </div>
+                      
+                    </div>*/}
+
                   </div>
                 </div>
               </div>
