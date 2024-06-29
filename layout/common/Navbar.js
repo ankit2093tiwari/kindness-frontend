@@ -19,7 +19,7 @@ export default function Navbar() {
         <header id="header" className="header d-flex align-items-center">
           <div className="container d-flex justify-content-between">
             <a href="/" className="logo d-flex align-items-center">
-              <Image src="/images/logo.png" alt="kindness-logo" height={125} width={185} />
+              <Image src="/logo.png" alt="kindness-logo" height={125} width={185} />
             </a>
 
             <nav id="navbar" className="navbar" style={showNavBar ? { right: '0' } : {}}>
