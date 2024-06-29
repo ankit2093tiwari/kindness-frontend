@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-md-3 footer-info">
               <a href="/">
-                <img className="footerLogo" src="/footer_logo.png" />
+                <img className="footerLogo" src="/logo.png" />
               </a>
             </div>
             <div className="col-md-12 col-lg-6 footer-info">
