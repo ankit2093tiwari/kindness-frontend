@@ -343,247 +343,21 @@ const Get_involved = () => {
         <section className="pt-0">
           <div className="container">
             <div className="row">
-              <div className="col-md-12 col-lg-12 mt-4">
-                <div className="get_involved_sidebar_1">
-                  <div className="container">
-                   
-                  </div>
-
-                  <div className="container text-center mt-5">
-                    <Image
-                      src={
-                        data4?.zelle_image
-                          ? process.env.NEXT_PUBLIC_SITE_URL +
-                            data4?.zelle_image
-                          : "/bg-video-banner.jpg"
-                      }
-                      width={70}
-                      height={35}
-                      alt={data4?.zelle_text}
-                    />
-                    <p className="fst_wrap text-center">
-                      {data4?.zelle_text}
-                      <br />
-                      the email{" "}
-                      <Link href={`mailto:${data4?.mailing_text}`}>
-                        {data4?.mailing_text}
-                      </Link>
-                    </p>
-
-                    <Image
-                      src={
-                        data4?.cash_app_image
-                          ? process.env.NEXT_PUBLIC_SITE_URL +
-                            data4?.cash_app_image
-                          : "/bg-video-banner.jpg"
-                      }
-                      width={250}
-                      height={230}
-                      alt={data4?.cash_app_text}
-                    />
-
-                    <p className="fst_wrap text-center">
-                      {data4?.cash_app_text}
-                    </p>
-
-                    <p className="fst_wrap text-center">
-                      <b>
-                        The Kindness Campaign <br />
-                        703 E 75th St
-                        <br />
-                        Chicago, IL 60619 - 1907
-                      </b>
-                    </p>
-                  </div>
-
-                  <div className="donation_form">
-                    {/* <h3 className="event_categories_wrap text-center">
-                      LEARN MORE
-                    </h3> */}
-                    <h3 className="event_categories_wrap text-center">
-                      {data3?.section_post}
-                    </h3>
-
-                    <input
-                      type="text"
-                      className="donation_form_text"
-                      placeholder="Name"
-                      aria-label="Name *"
-                      value={name}
-                      onChange={(e) => setname(e.target.value)}
-                    />
-
-                    <input
-                      type="email"
-                      className="donation_form_text"
-                      id="inputEmail"
-                      placeholder="Email *"
-                      onChange={(e) => setemail(e.target.value)}
-                      value={email}
-                    />
-
-                    <input
-                      type="phone"
-                      className="donation_form_text"
-                      id="inputnumber"
-                      placeholder="Phone:"
-                      value={phone}
-                      onChange={(e) => {
-                        e?.target?.value?.length < 11
-                          ? setphone(e?.target?.value)
-                          : showNotification(
-                              "Only 10 digits allowed for phone number",
-                              "Error"
-                            );
-                      }}
-                    />
-
-                    <label
-                      htmlFor="exampleFormControlInput1"
-                      className="form-label"
-                    >
-                      Interest: *
-                    </label>
-                    <ul className="fix-radio" style={{ display: "grid" }}>
-                      {interestList?.length
-                        ? interestList?.map((item, index) => (
-                            <div className="event_intrest" key={index}>
-                              <input
-                                className=" label_radio "
-                                type="radio"
-                                value={item?.id}
-                                name="radio-group"
-                                id="flexCheckDefault_1"
-                                checked={
-                                  selectedOption == item?.id ? true : false
-                                }
-                                onChange={handleRadioChange}
-                              />
-                              &nbsp;
-                              <label
-                                className="form-check-label label_radio"
-                                htmlFor="flexCheckDefault_1"
-                              >
-                                {" "}
-                                {item?.interest_type}{" "}
-                              </label>
-                            </div>
-                          ))
-                        : ""}
-                    </ul>
-
-                    <textarea
-                      className="form-control donation_form_text "
-                      id="Textarea6"
-                      placeholder="Message:"
-                      rows="3"
-                      value={msg}
-                      onChange={(e) => setmsg(e.target.value)}
-                    ></textarea>
-
-                    <div className="text-center">
-                      {loaderStatus ? (
-                        <Spinner
-                          style={{
-                            width: "30px",
-                            height: "30px",
-                            color: "#0a1c51fc",
-                          }}
-                          animation="border"
-                        />
-                      ) : (
-                        <button
-                          type="submit"
-                          className="btn btn-primary donate_btn"
-                          onClick={postLearnMore}
-                        >
-                          SEND
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Sidebar End */}
-
-              {/* Sidebar Start */}
-              <div className="col-md-12 col-lg-8" id="donate">
-                <div className="container">
-                  <div className="Event_sidebar">
-                    <div className="on_going_events mt-4">
-                      <p>DONATE</p>
-                    </div>
-
-                    <div className="container">
-                      <div className="row">
-                        <p className="fst_event_involved_sidebar">
-                          {data2?.header_text}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="container">
-                      <div className="about_video_2">
-                        {data2?.section_media == "video" ? (
-                          <ReactPlayer
-                            url={
-                              data2?.image
-                                ? process.env.NEXT_PUBLIC_SITE_URL +
-                                  data2?.image
-                                : "demo-video.mp4"
-                            }
-                            controls={true}
-                            playing={false}
-                            muted={false}
-                            width={"100%"}
-                            height={300}
-                          />
-                        ) : (
-                          <>
-                            {data2?.section_media == "youtube" ? (
-                              <ReactPlayer
-                                url={
-                                  data2?.image ? data2?.image : "demo-video.mp4"
-                                }
-                                controls={true}
-                                playing={false}
-                                muted={false}
-                                width={"100%"}
-                                height={300}
-                              />
-                            ) : (
-                              <>
-                                <Image
+            <Image
                                   src={
                                     data2?.image
-                                      ? process.env.NEXT_PUBLIC_SITE_URL +
-                                        data2?.image
+                                      ? process.env.NEXT_PUBLIC_SITE_URL + data2?.image
                                       : "/bg-video-banner.jpg"
                                   }
                                   height={300}
                                   width={800}
                                   alt="video-banner"
-                                  style={{ width: "100%", objectFit: "cover" }}
+                                  style={{ width: "100%", objectFit: "cover", height:"auto",border:"10px solid #88B6DE" }}
                                 />
-                              </>
-                            )}
-                          </>
-                        )}
-                      </div>
-                    </div>
-
-                    <div className="container">
-                        {/*<div>
-                        <div className="mt-5 text-center">
-                          <h4 className="get_involved_heading">WISH LISTS</h4>
-                          <p className="get_involved_p text-center">
-                            {data2?.page_text}
-                          </p>
-                        </div>
-                      </div>*/}
-
-                   <form className="donation_form">
+              <div className="col-md-12 col-lg-12 mt-4">
+                <div className="get_involved_sidebar_1">
+                  <div className="container">
+                    <form className="donation_form">
                       <h3
                         className="event_categories_wrap text-center"
                         style={{ fontSize: "15pt" }}
@@ -788,9 +562,244 @@ const Get_involved = () => {
                         className="rounded mx-auto d-block mt-4"
                       />
                     </form>
+                  </div>
+
+                  <div className="container text-center mt-5">
+                    <Image
+                      src={
+                        data4?.zelle_image
+                          ? process.env.NEXT_PUBLIC_SITE_URL +
+                            data4?.zelle_image
+                          : "/bg-video-banner.jpg"
+                      }
+                      width={70}
+                      height={35}
+                      alt={data4?.zelle_text}
+                    />
+                    <p className="fst_wrap text-center">
+                      {data4?.zelle_text}
+                      <br />
+                      the email{" "}
+                      <Link href={`mailto:${data4?.mailing_text}`}>
+                        {data4?.mailing_text}
+                      </Link>
+                    </p>
+
+                    <Image
+                      src={
+                        data4?.cash_app_image
+                          ? process.env.NEXT_PUBLIC_SITE_URL +
+                            data4?.cash_app_image
+                          : "/bg-video-banner.jpg"
+                      }
+                      width={250}
+                      height={230}
+                      alt={data4?.cash_app_text}
+                    />
+
+                    <p className="fst_wrap text-center">
+                      {data4?.cash_app_text}
+                    </p>
+
+                    <p className="fst_wrap text-center">
+                      <b>
+                        The Kindness Campaign <br />
+                        703 E 75th St
+                        <br />
+                        Chicago, IL 60619 - 1907
+                      </b>
+                    </p>
+                  </div>
+
+                  <div className="donation_form">
+                    {/* <h3 className="event_categories_wrap text-center">
+                      LEARN MORE
+                    </h3> */}
+                    <h3 className="event_categories_wrap text-center">
+                      {data3?.section_post}
+                    </h3>
+
+                    <input
+                      type="text"
+                      className="donation_form_text"
+                      placeholder="Name"
+                      aria-label="Name *"
+                      value={name}
+                      onChange={(e) => setname(e.target.value)}
+                    />
+
+                    <input
+                      type="email"
+                      className="donation_form_text"
+                      id="inputEmail"
+                      placeholder="Email *"
+                      onChange={(e) => setemail(e.target.value)}
+                      value={email}
+                    />
+
+                    <input
+                      type="phone"
+                      className="donation_form_text"
+                      id="inputnumber"
+                      placeholder="Phone:"
+                      value={phone}
+                      onChange={(e) => {
+                        e?.target?.value?.length < 11
+                          ? setphone(e?.target?.value)
+                          : showNotification(
+                              "Only 10 digits allowed for phone number",
+                              "Error"
+                            );
+                      }}
+                    />
+
+                    <label
+                      htmlFor="exampleFormControlInput1"
+                      className="form-label"
+                    >
+                      Interest: *
+                    </label>
+                    <ul className="fix-radio" style={{ display: "grid" }}>
+                      {interestList?.length
+                        ? interestList?.map((item, index) => (
+                            <div className="event_intrest" key={index}>
+                              <input
+                                className=" label_radio "
+                                type="radio"
+                                value={item?.id}
+                                name="radio-group"
+                                id="flexCheckDefault_1"
+                                checked={
+                                  selectedOption == item?.id ? true : false
+                                }
+                                onChange={handleRadioChange}
+                              />
+                              &nbsp;
+                              <label
+                                className="form-check-label label_radio"
+                                htmlFor="flexCheckDefault_1"
+                              >
+                                {" "}
+                                {item?.interest_type}{" "}
+                              </label>
+                            </div>
+                          ))
+                        : ""}
+                    </ul>
+
+                    <textarea
+                      className="form-control donation_form_text "
+                      id="Textarea6"
+                      placeholder="Message:"
+                      rows="3"
+                      value={msg}
+                      onChange={(e) => setmsg(e.target.value)}
+                    ></textarea>
+
+                    <div className="text-center">
+                      {loaderStatus ? (
+                        <Spinner
+                          style={{
+                            width: "30px",
+                            height: "30px",
+                            color: "#0a1c51fc",
+                          }}
+                          animation="border"
+                        />
+                      ) : (
+                        <button
+                          type="submit"
+                          className="btn btn-primary donate_btn"
+                          onClick={postLearnMore}
+                        >
+                          SEND
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sidebar End */}
+
+              {/* Sidebar Start */}
+              {/* <div className="col-md-12 col-lg-8" id="donate">
+                <div className="container">
+                  <div className="Event_sidebar">
+                    <div className="on_going_events mt-4">
+                      <p>DONATE</p>
                     </div>
 
-                  {/*<div className="container">
+                    <div className="container">
+                      <div className="row">
+                        <p className="fst_event_involved_sidebar">
+                          {data2?.header_text}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="container">
+                      <div className="about_video_2">
+                        {data2?.section_media == "video" ? (
+                          <ReactPlayer
+                            url={
+                              data2?.image
+                                ? process.env.NEXT_PUBLIC_SITE_URL +
+                                  data2?.image
+                                : "demo-video.mp4"
+                            }
+                            controls={true}
+                            playing={false}
+                            muted={false}
+                            width={"100%"}
+                            height={300}
+                          />
+                        ) : (
+                          <>
+                            {data2?.section_media == "youtube" ? (
+                              <ReactPlayer
+                                url={
+                                  data2?.image ? data2?.image : "demo-video.mp4"
+                                }
+                                controls={true}
+                                playing={false}
+                                muted={false}
+                                width={"100%"}
+                                height={300}
+                              />
+                            ) : (
+                              <>
+                                <Image
+                                  src={
+                                    data2?.image
+                                      ? process.env.NEXT_PUBLIC_SITE_URL +
+                                        data2?.image
+                                      : "/bg-video-banner.jpg"
+                                  }
+                                  height={300}
+                                  width={800}
+                                  alt="video-banner"
+                                  style={{ width: "100%", objectFit: "cover" }}
+                                />
+                              </>
+                            )}
+                          </>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="container">
+                      <div>
+                        <div className="mt-5 text-center">
+                          <h4 className="get_involved_heading">WISH LISTS</h4>
+                          <p className="get_involved_p text-center">
+                            {data2?.page_text}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="container">
                       <div>
                         <p className="get_involved_p text-center">
                           {data2?.section_title}
@@ -851,15 +860,15 @@ const Get_involved = () => {
 
                       <div className="container">
                         <div className="row">
-                          <p className="fst_event_involved_sidebar"> {data3?.page_text}  </p>
+                          <p className="fst_event_involved_sidebar">
+                            {data3?.page_text}
+                          </p>
                         </div>
                       </div>
-                      
-                    </div>*/}
-
+                    </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
