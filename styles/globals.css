@@ -3555,6 +3555,10 @@ input[type="text"]:hover {
   text-transform: uppercase;
 }
 
+.pt-0 .row{
+  justify-content: center !important;
+}
+
 /* -----------------------Media Queries----------------------- */
 @media (max-width: 1200px) {
   .search11 {
@@ -4767,7 +4771,7 @@ input[type="text"]:hover {
 }
 
 .get_involved_sidebar_1>div>img {
-  width: 100%;
+  width: 20%;
   height: auto;
 }
 
