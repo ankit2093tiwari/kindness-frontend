@@ -352,7 +352,7 @@ const Get_involved = () => {
                                   height={300}
                                   width={800}
                                   alt="video-banner"
-                                  style={{ width: "100%", objectFit: "cover", height:"auto",border:"10px solid #88B6DE" }}
+                                  style={{ width: "auto", objectFit: "cover", height:"auto",border:"10px solid #88B6DE" }}
                                 />
               <div className="col-md-12 col-lg-12 mt-4">
                 <div className="get_involved_sidebar_1">
