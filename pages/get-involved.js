@@ -156,7 +156,6 @@ const Get_involved = () => {
     camppage3();
     showNewsSection();
 
-    console.log("router==>", router.asPath);
     const index = router.asPath.indexOf("#");
     const scrollId = index !== -1 ? router.asPath.substring(index + 1) : "";
 
