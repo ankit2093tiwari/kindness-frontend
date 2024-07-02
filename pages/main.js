@@ -27,6 +27,7 @@ import TeamModal from "./components/ShowTeam";
 import { newsPageService } from "./../store/services/newsPageService";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import Ourteam from "./our-team";
 
 function MainPage({ metaData }) {
   const router = useRouter();
@@ -284,9 +285,9 @@ function MainPage({ metaData }) {
     }
   };
 
-  const showTeamData = () => {
-    setToggle(!toggle);
-  };
+  // const showTeamData = () => {
+  //   setToggle(!toggle);
+  // };
 
   async function fetchFeaturedComment(params) {
     try {
@@ -463,7 +464,7 @@ function MainPage({ metaData }) {
 
           {/* editing end by sudhanshu */}
 
-          <div className="container">
+          <div className="container text-center">
             <h1 style={{color:"white"}} className="mt-5 hompageHeadings">Our Mission</h1>
             <h4 className="home-main-heading-2">{MissionText}</h4>
           </div>
@@ -481,7 +482,7 @@ function MainPage({ metaData }) {
         <section className="vission" id="vission">
           <div className="container aos-init aos-animate" data-aos="fade-up">
             <div className="row gy-12">
-              <div className="col-lg-12">
+              <div className="col-lg-12 text-center">
                 <h2 style={{color:"#646F6E"}} className="mt-2 hompageHeadings ">Our Vision</h2>
                 <h4 className="home-main-heading-3">
                   {staticContent?.page_text}
@@ -1869,7 +1870,7 @@ function MainPage({ metaData }) {
                   height={0}
                   alt="news-title-3"
                   sizes="100vw"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <Link href="/get-involved/#donate" target="_blank">
                   <p className="get_p">
