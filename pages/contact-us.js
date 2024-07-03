@@ -7,7 +7,7 @@ import showNotification from "@/helpers/show_notification";
 import Link from "next/link";
 import { Spinner } from "react-bootstrap";
 
-const Events = () => {
+const Contactus = () => {
   const [data, setdata] = useState("");
 
   const [name, setName] = useState("");
@@ -164,7 +164,7 @@ const Events = () => {
                       </li>
                       <li>
                         <Link
-                          href="https://www.facebook.com/Show.Kindness.Everyday/ "
+                          href="https://www.linkdin.com/"
                           target="_blank"
                         >
                           LinkedIn
@@ -174,13 +174,10 @@ const Events = () => {
 
                     <ul>
                       <li>
-                        <Link href="#">Instagram</Link>
+                        <Link href="https://www.instagram.com/showkindnesseveryday/">Instagram</Link>
                       </li>
                       <li>
-                        <Link
-                          href="https://www.youtube.com/c/TheKindnessCampaign "
-                          target="_blank"
-                        >
+                        <Link href="https://www.youtube.com/c/TheKindnessCampaign" target="_blank">
                           YouTube
                         </Link>
                       </li>
@@ -225,21 +222,11 @@ const Events = () => {
                         <label htmlFor="subject">Message:</label>
                       </div>
                       <div className="col-md-12">
-                        <textarea
-                          id="subject"
-                          name="subject"
-                          style={{ width: "100%", height: 110 }}
-                          value={message}
-                          onChange={(e) => setMessage(e?.target?.value)}
-                        />
+                        <textarea id="subject" name="subject" style={{ width: "100%", height: 110 }} value={message} onChange={(e) => setMessage(e?.target?.value)} />
                       </div>
                     </div>
 
-                    <button
-                      type="submit"
-                      onClick={submitContactForm}
-                      className="Contact_form_btn"
-                    >
+                    <button type="submit" onClick={submitContactForm} className="Contact_form_btn">
                       Send
                     </button>
                   </form>
@@ -285,4 +272,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default Contactus;
