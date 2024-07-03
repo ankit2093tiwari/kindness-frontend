@@ -1975,19 +1975,23 @@ function MainPage({ metaData }) {
               <ul className=" row sponsors_wrap_row sponsorList">
                 {sponsorPartnerData?.map((sponsItem, index) => {
                   return (
-                    <li className="col" key={randomKey()}>
-                      <Image
-                        src={
-                          sponsItem?.media
-                            ? process.env.NEXT_PUBLIC_SITE_URL +
-                              sponsItem?.media
-                            : "clients/client-1.png"
-                        }
-                        width={224}
-                        height={115}
-                        alt={sponsItem?.title}
-                        className="img-fluid"
-                      />
+                   <li className="col-12 col-sm-6 col-md-4 col-lg-2" key={randomKey()}>
+                      
+                     
+                        <Image
+                          src={
+                            sponsItem?.media
+                              ? process.env.SITE_URL + sponsItem?.media
+                              : "/logo.png"
+                          }
+                          width={224}
+                          height={115}
+                          alt={sponsItem?.title}
+                          className="img-fluid "
+                          style={{ width: "100%", height: "auto" }}
+                        />
+                     
+
                     </li>
                   );
                 })}
