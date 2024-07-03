@@ -346,8 +346,9 @@ const Get_involved = () => {
           <div className="container">
             <div className="row">
               <div className="col text-center">
+			  {data2?.image ?
                 <Image
-                  src={process.env.NEXT_PUBLIC_SITE_URL + data2?.image}
+                  src={ process.env.SITE_URL + data2?.image }
                   height={300}
                   width={800}
                   alt="video-banner"
@@ -356,6 +357,7 @@ const Get_involved = () => {
                     maxHeight: "307px", height: "auto", width: "100%", border: "10px solid #88B6DE"
                   }}
                 />
+			  :""}
               </div>
 
               <div className="col-md-12 col-lg-12 mt-4 getInvForm">
@@ -584,7 +586,7 @@ const Get_involved = () => {
                         <Image
                           src={
                             data4?.zelle_image
-                              ? process.env.NEXT_PUBLIC_SITE_URL + data4?.zelle_image
+                              ? process.env.SITE_URL + data4?.zelle_image
                               : "/bg-video-banner.jpg"
                           }
                           width={250}
@@ -608,7 +610,7 @@ const Get_involved = () => {
                         <Image
                           src={
                             data4?.cash_app_image
-                              ? process.env.NEXT_PUBLIC_SITE_URL + data4?.cash_app_image
+                              ? process.env.SITE_URL + data4?.cash_app_image
                               : "/bg-video-banner.jpg"
                           }
                           width={250}
@@ -771,7 +773,7 @@ const Get_involved = () => {
                           <ReactPlayer
                             url={
                               data2?.image
-                                ? process.env.NEXT_PUBLIC_SITE_URL + data2?.image
+                                ? process.env.SITE_URL + data2?.image
                                 : "demo-video.mp4"
                             }
                             controls={true}
@@ -798,7 +800,7 @@ const Get_involved = () => {
                                 <Image
                                   src={
                                     data2?.image
-                                      ? process.env.NEXT_PUBLIC_SITE_URL + data2?.image
+                                      ? process.env.SITE_URL + data2?.image
                                       : "/bg-video-banner.jpg"
                                   }
                                   height={300}
@@ -833,7 +835,7 @@ const Get_involved = () => {
                         <div className="text-center">
                           <a
                             target="_blank"
-                            href={process.env.NEXT_PUBLIC_SITE_URL + data2?.image2}
+                            href={process.env.SITE_URL + data2?.image2}
                             className="buy-btn involved_btn"
                             download
                           >
@@ -848,7 +850,7 @@ const Get_involved = () => {
                         <div className="text-center">
                           <a
                             target="_blank"
-                            href={process.env.NEXT_PUBLIC_SITE_URL + data2?.image3}
+                            href={process.env.SITE_URL + data2?.image3}
                             className="buy-btn involved_btn"
                             download
                           >
@@ -930,7 +932,7 @@ const Get_involved = () => {
                         <Image
                           src={
                             sponsItem?.media
-                              ? process.env.NEXT_PUBLIC_SITE_URL + sponsItem?.media
+                              ? process.env.SITE_URL + sponsItem?.media
                               : "clients/client-1.png"
                           }
                           width={224}
@@ -951,7 +953,7 @@ const Get_involved = () => {
                         <Image
                           src={
                             sponsItem?.media
-                              ? process.env.NEXT_PUBLIC_SITE_URL + sponsItem?.media
+                              ? process.env.SITE_URL + sponsItem?.media
                               : "clients/client-1.png"
                           }
                           width={224}
@@ -989,7 +991,7 @@ const Get_involved = () => {
                         <Image
                           src={
                             sponsItem?.media
-                              ? process.env.NEXT_PUBLIC_SITE_URL + sponsItem?.media
+                              ? process.env.SITE_URL + sponsItem?.media
                               : "clients/client-1.png"
                           }
                           width={224}
@@ -1013,7 +1015,7 @@ const Get_involved = () => {
                         <Image
                           src={
                             sponsItem?.media
-                              ? process.env.NEXT_PUBLIC_SITE_URL + sponsItem?.media
+                              ? process.env.SITE_URL + sponsItem?.media
                               : "clients/client-1.png"
                           }
                           width={224}
