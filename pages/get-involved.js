@@ -347,7 +347,7 @@ const Get_involved = () => {
                 <Image
                   src={
                     data2?.image
-                      ? process.env.SITE_URL + data2?.image
+                      ? process.env.NEXT_PUBLIC_SITE_URL + data2?.image
                       : "/bg-video-banner.jpg"
                   }
                   height={300}
@@ -575,7 +575,7 @@ const Get_involved = () => {
                         <Image
                           src={
                             data4?.zelle_image
-                              ? process.env.SITE_URL + data4?.zelle_image
+                              ? process.env.NEXT_PUBLIC_SITE_URL + data4?.zelle_image
                               : "/bg-video-banner.jpg"
                           }
                           width={250}
@@ -598,7 +598,7 @@ const Get_involved = () => {
                         <Image
                           src={
                             data4?.cash_app_image
-                              ? process.env.SITE_URL + data4?.cash_app_image
+                              ? process.env.NEXT_PUBLIC_SITE_URL + data4?.cash_app_image
                               : "/bg-video-banner.jpg"
                           }
                           width={250}
