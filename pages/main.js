@@ -1981,7 +1981,7 @@ function MainPage({ metaData }) {
                         <Image
                           src={
                             sponsItem?.media
-                              ? process.env.SITE_URL + sponsItem?.media
+                              ? process.env.NEXT_PUBLIC_SITE_URL + sponsItem?.media
                               : "/logo.png"
                           }
                           width={224}
