@@ -636,7 +636,7 @@ const Get_involved = () => {
                       </p>
                     </div>
 
-                    <div className="donation_form">
+                    <div className="donation_form ms-3 mx-3">
                       {/* <h3 className="event_categories_wrap text-center">
                       LEARN MORE
                     </h3> */}
