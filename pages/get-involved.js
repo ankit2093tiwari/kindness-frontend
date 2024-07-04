@@ -677,7 +677,7 @@ const Get_involved = () => {
                             );
                         }}
                       />
-                      <div className="d-flex justify-content-between m-3">
+                      <div className="d-flex m-3">
                         <label
                           htmlFor="exampleFormControlInput1"
                           className="form-label giftamttext"
