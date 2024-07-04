@@ -3106,13 +3106,13 @@ button-1 {
 }
 
 .news_title_1 {
-  height: auto;
+  height: 200px;
   width: 100%;
 }
 
 .get_p {
   position: absolute;
-  top: 60%;
+  top: 78%;
   left: 38%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -4328,7 +4328,7 @@ input[type="text"]:hover {
   }
 
   .news_title_1 {
-    height: auto;
+    height: 200px;
     margin-top: 20px;
   }
 
@@ -4894,4 +4894,8 @@ input[type="text"]:hover {
   .giftamttext{
     font-size:18px;
   }
+}
+.ourTeam{
+  font-weight: 700;
+  font-family: "Maven Pro", sans-serif;
 }
