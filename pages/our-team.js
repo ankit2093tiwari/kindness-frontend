@@ -64,6 +64,10 @@ const Ourteam = () => {
       ) : null}
 
       <div className={styles.container}>
+        <div className='text-center mt-4 h4 text-uppercase fw-bolder'>
+          <h2  className='ourTeam'>Our Team</h2>
+        </div>
+
         <div className={styles.main}>
           <div className={styles.content}>
             {
