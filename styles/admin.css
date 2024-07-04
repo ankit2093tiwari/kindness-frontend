@@ -889,3 +889,6 @@ input:focus {
   flex: 0 0 25%;
   max-width: 25%;
 }
+.form-check > input{
+  width:10%;
+}
