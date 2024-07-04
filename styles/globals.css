@@ -3561,6 +3561,13 @@ input[type="text"]:hover {
   .search11 {
     display: none;
   }
+ 
+  .donate-btn{
+    margin-bottom: 0 !important;
+  }
+  .donate-btn img{
+    height: 100% !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -3573,6 +3580,10 @@ input[type="text"]:hover {
   .fst_event {
     font-weight: 600 !important;
     margin-bottom: 0;
+  }
+
+  .donate-btn{
+    margin-bottom: 1.5rem !important;
   }
 }
 
