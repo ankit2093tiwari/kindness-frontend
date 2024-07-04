@@ -1866,7 +1866,7 @@ function MainPage({ metaData }) {
           <div className="container">
             <h3 className="mb-4 get_involved_wrap">GET INVOLVED</h3>
             <div className="row">
-              <div className="col-lg-7 col-md-12 mb-4 align-self-centers">
+              <div className="col-lg-7 col-md-12 mb-4 align-self-centers donate-btn">
                 <Image
                   src="/image.jpg"
                   width={0}
